@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        h1{
+            text-align: center;
+            color: navy;
+        }
+        /* { 
+            padding: 0;
+            margin:10;
+        } */
+        body{
+            text-align: center; 
+            background-color:rgb(255, 255, 255);
+               
+          
+        }
+      fieldset{
+        width: 600px; ;
+        height: fit-content;
+        background-color:lightgrey;
+        /* border: 0.5rem outset pink; */
+        /* outline: 0.5rem solid khaki; */
+        /* box-shadow: 0 0 0 2rem skyblue; */
+        border-radius: 12px;
+        /* font: bold 1rem sans-serif; */
+         border: 0.3rem solid grey;
+         margin: 2rem;
+         padding: 1rem;
+        }
+       div.a{
+        text-align: left;
+       }
+       button{
+        font-size: large;
+    width: 200px;
+    padding: 15px ;
+    /* border-spacing: 10px; */
+       border-radius: 15px;
+    font-weight: bolder;
+    border:2px solid #000000;
+    background: lightblue;
+    color: #000000;
+       }
+    </style>
+</head>
+<body>
+    <h1>SURVEY FORM</h1>
+    <center>
+    <!-- <div class="form-container"> -->
+     <fieldset>
+    <form action="" target="_blank" method="get" autocomplete="on" novalidate enctype="multipart/form-data" >
+      
+          <b>
+        <caption>Let us know how we can improve</caption> 
+         <br><br>
+          <div>
+          <label for="name">*Name:</label>
+          <input type="text" id="name"  placeholder="Enter name">
+          </div>
+          <br>
+          <div>
+              <label for="email">*Email:</label>
+              <input type="email" id="email"  placeholder="Enter email">
+          </div>
+          <br>           
+          <div>
+            &ensp;&ensp;<label for="age">*Age:</label>
+              <input type="number" id="age" placeholder="Enter age" >
+          </div>
+          <br>
+          <div style="text-align: center;">
+            &nbsp;&nbsp;&ensp;&ensp;
+            &ensp;&ensp;&ensp;&ensp;
+            &ensp;&ensp;&ensp;&ensp; 
+            &ensp;&ensp;&ensp;&ensp; 
+             <input type="file">
+          </div>
+          <br>
+           <div class="a">
+            
+                <label for="role"> &ensp;&ensp;&ensp;&ensp;
+                    &ensp;
+            
+                     Which option best describes your current role ? </label>
+
+                    &ensp;&ensp;
+                <select id="role" name="role" style="width: 75px;">
+                  <option value="student">student</option>
+                  <option value="teacher">teacher</option>
+                  <option value="graduate">graduate</option>
+                </select>
+          </div>
+          <br>
+          <div class="a">
+            
+            <label for="pg">
+               How likely is that you would recommend this
+                program to your friend? </label>
+                <br>
+                <div>
+                <input type="radio" id="definitly" name="pg">
+                <label for="pg">Definitly</label><br>
+                 <input type="radio" id="maybe" name="pg">
+                <label for="pg">Maybe</label><br>
+                <input type="radio" id="notsure" name="pg">
+                <label for="pg">Not sure</label><br>
+             </div>
+             <br>
+             <div class="a">
+            
+                <label for="likes"> &ensp;&ensp;&ensp;&ensp;
+                    &ensp;&ensp;&ensp;&ensp; 
+                    &ensp;&ensp;&ensp;&ensp; 
+                    &ensp;&ensp;&ensp;&ensp;
+                    &ensp;&ensp;&ensp;&ensp; 
+                    &ensp;&ensp;&ensp;&ensp;
+                 
+                    what do you like most ?</label>
+
+                    &ensp;&ensp;
+                <select id="likes" name="likes" >
+                <option value="teaching">Teaching</option>
+                  <option value="resourses">resourses</option>
+                </select>
+          </div>
+          <br>
+         
+        <div>
+            <label for="plang">That should be improved in the future(check all that apply)</label> 
+             <input type="checkbox"id="front"name="plang">
+              <label for="front">front-end-project</label><br>
+              <input type="checkbox"id="back"name="plang">
+              <label for="back">back-end-project</label><br>
+              <input type="checkbox"id="Data"name="plang">
+              <label for="Data">Data visualization</label><br>
+         </div>
+     <br>
+     <div>
+        <label for="story">Any Comments or Suggestions?</label>
+        <textarea id="story" name="story" rows="5" cols="33">
+        </textarea>
+    </div> 
+    <br>
+    <button type="button">SUBMIT</button>
+
+      </div>
+      </b>
+      </form>
+</fieldset>
+    <!-- </div> -->
+  </center>
+</body>
+</html>
